@@ -2,7 +2,7 @@
 
 
 	function robocik( $nr_zad, $F_sql){
-		require('conn.php');
+		require('/conn.php');
 		echo("<h1>zad.$nr_zad</h1>");
 		$result = $conn->query($F_sql);
 		$wiersz = $result->fetch_assoc();
