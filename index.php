@@ -2,7 +2,7 @@
 
 
 	function robocik( $nr_zad, $F_sql){
-		$conn = new mysqli("127.0.0.1","root","","mj");
+		$conn = new mysqli("remotemysql.com","WtbCi7xfxi","BDDTxIAkhC","WtbCi7xfxi");
 		echo("<h1>zad.$nr_zad</h1>");
 		$result = $conn->query($F_sql);
 		$wiersz = $result->fetch_assoc();
@@ -20,7 +20,7 @@ robocik(4,"Select * from pracownicy where imie not like '%a' and (dzial = 2 or d
 
 <h1> Maksymilian Janowski 11 </h1>
 <?php
-$conn = new mysqli("127.0.0.1","root","","mj");
+$conn = new mysqli("remotemysql.com","WtbCi7xfxi","BDDTxIAkhC","WtbCi7xfx");
 
 //zad1
 
