@@ -2,10 +2,7 @@
 
 
 	function robocik( $nr_zad, $F_sql){
-		$conn = new mysqli("remotemysql.com","WtbCi7xfxi","BDDTxIAkhC","WtbCi7xfxi");
-		if ($conn->connet_error){
-			die("Connection failed: " . $conn->connect_error)
-		}
+		require('connect.php');
 		echo("<h1>zad.$nr_zad</h1>");
 		$result = $conn->query($F_sql);
 		$wiersz = $result->fetch_assoc();
