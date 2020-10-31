@@ -6,7 +6,7 @@
     $result=$conn->query($sql);
         echo("<hr />");
         echo("<h3>Tabela Pracowników</h3>");
-        echo("<li> $sql");
+        echo("<li>$sql");
         echo("<table border=1>");
         echo("<th>id</th>");
         echo("<th>imie</th>");
@@ -22,7 +22,7 @@
 $sql=('SELECT * from pracownicy where imie like "%a"');
     $result=$conn->query($sql);
         echo("<h3>Tabela Kobiet</h3>");//nazwa nad tabelą
-        echo("<li>SQL: $sql");
+        echo("<li>$sql");
         echo("<table border=1>");
         echo("<th>id</th>");
         echo("<th>imie</th>");
@@ -38,7 +38,7 @@ echo("<hr />");
 $sql=('SELECT * from pracownicy,organizacja where dzial=id_org  order by imie asc');
     $result=$conn->query($sql); //mysql
         echo("<h3>Tabela Pracowników Posortowana Alfabetycznie</h3>");//nazwa nad tabelą
-        echo("<li>SQL: $sql");
+        echo("<li>$sql");
         echo("<table border=1>");
         echo("<th>id</th>");
         echo("<th>imie</th>");
@@ -58,7 +58,7 @@ $sql=('SELECT * from pracownicy,organizacja where dzial=id_org  order by zarobki
     $result=$conn->query($sql); //mysql
         echo("<h3>Tabela Pracowników Posortowana Zarobkami Rosnąco</h3>");//nazwa nad tabelą
         echo("<table border=1>");
-        echo("<li>SQL: $sql");
+        echo("<li>$sql");
         echo("<th>id</th>");
         echo("<th>imie</th>");
         echo("<th>dzial</th>");
