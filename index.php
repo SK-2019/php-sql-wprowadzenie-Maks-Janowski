@@ -19,7 +19,7 @@
             }
         echo("</table>");
     echo("<hr />");
-$sql=('SELECT * from pracownicy,organizacja where and imie like "%a"');
+$sql=('SELECT * from pracownicy where and imie like "%a"');
     $result=$conn->query($sql);
         echo("<h3>Tabela Kobiet</h3>");//nazwa nad tabelą
         echo("<li>SQL: $sql");
