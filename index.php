@@ -1,3 +1,9 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
 <h1>Maksymilian Janowski 2Ti</h1>
 <?php
    require_once('conn.php');
@@ -72,6 +78,6 @@ $sql=('SELECT * from pracownicy,organizacja where dzial=id_org  order by zarobki
             }
         echo("</table>");
 echo("<hr />");
-
-
 ?>
+</body>
+   </html>
