@@ -2,7 +2,7 @@
 <?php
    require_once('conn.php');
 
-    $sql=('SELECT * FROM pracownicy')
+    $sql=('SELECT * FROM pracownicy');
     $result=$conn->query($sql);
         echo("<hr />");
         echo("<h3>Tabela Pracowników</h3>");
