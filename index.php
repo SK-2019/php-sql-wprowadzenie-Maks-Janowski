@@ -100,9 +100,22 @@ $sql=('SELECT * from pracownicy,organizacja where dzial=id_org  order by imie as
             }
         echo("</table>");
 echo("<hr />");
+$sql=('SELECT dzial, sum(zarobki) as suma, nazwa_dzial FROM `pracownicy`, `organizacja` WHERE dzial = id_org');
+    $result=$conn->query($sql); //mysql
+        echo("<h3>Tabela Pracowników Posortowana Alfabetycznie</h3>");//nazwa nad tabelą
+        echo("<li>$sql");
+        echo("<table border=1>");
+        echo("<th>dzial</th>");
+        echo("<th>suma</th>");
+        echo("<th>nazwa_dzial</th>");
+            while($row=$result->fetch_assoc()){
+                echo("<tr>");
+                      echo("<td>".$row["dzial"]."</td><td>".$row["suma"]."</td><td>".$row["nazwa_dzial"]."</td>"); 
+                echo("</tr>");
+            }
+        echo("</table>");
+echo("<hr />");
 
-
-   
    
 ?>
 </body>
