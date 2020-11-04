@@ -64,7 +64,6 @@ $sql=('SELECT * from pracownicy,organizacja where dzial=id_org  order by imie as
             }
         echo("</table>");
 echo("<hr />");
-echo("<hr />");
 $sql=('SELECT * from pracownicy,organizacja where dzial=id_org  order by zarobki asc');
     $result=$conn->query($sql); //mysql
         echo("<h3>Tabela Pracowników Posortowana Zarobkami Rosnąco</h3>");//nazwa nad tabelą
