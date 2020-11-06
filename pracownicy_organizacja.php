@@ -99,11 +99,12 @@
         echo("</table>");
         echo("<hr />");
 
+            
+         <h1>Sortowanie</h1>
 
 ?>
 </body>
    </html>
       
-      
-         <h1>Sortowanie</h1>
+
       
