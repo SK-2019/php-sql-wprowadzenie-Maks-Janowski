@@ -188,7 +188,7 @@
       
     
       
-                       $sql=('select * from pracownicy,organizacja where dzial=id_org and imie not like "%a" order by nazwa_dzial asc, zarobki asc');
+                       $sql=('select * from pracownicy,organizacja where dzial=id_org and imie not like "%a" order by nazwa_dzial, zarobki asc');
     $result=$conn->query($sql);
         echo("<hr />");
         echo("<h3>Tabela pracownikow kobiet posortowanych rosnaco wg zarobkow</h3>");
