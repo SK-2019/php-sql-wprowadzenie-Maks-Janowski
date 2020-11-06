@@ -7,6 +7,7 @@
 <h1>Maksymilian Janowski 2Ti</h1>
 <a href="https://github.com/SK-2019/php-sql-wprowadzenie-Maks-Janowski"> link do mojego githuba </a>
    <a class="nav_link" href="funkcjeagregujace.php">Funkcje Agregujace</a>
+   <a class="nav_link" href="/">Heroku Strona</a>
 <?php
     require_once('conn.php');;
     $result=$conn->query('SELECT * FROM pracownicy,organizacja where dzial=id_org');//mysql
