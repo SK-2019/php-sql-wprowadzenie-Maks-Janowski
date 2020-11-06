@@ -107,7 +107,7 @@
       $sql=('select * from pracownicy,organizacja where dzial=id_org order by imie desc');
     $result=$conn->query($sql);
         echo("<hr />");
-        echo("<h3>Tabela</h3>");
+        echo("<h3>Tabela pracownikow posortowanych wg imienia</h3>");
         echo("<li>$sql");
         echo("<table border=1>");
         echo("<th>id</th>");
