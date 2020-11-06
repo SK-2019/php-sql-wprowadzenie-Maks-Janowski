@@ -59,7 +59,8 @@ h1 {
   background-color: #cdcfce;
   color: rgb(248, 16, 16);
 }
-.nav1{
+
+.nav_link{
   background-color: white;
   color: black;
   border: 2px solid #af4c4c;
@@ -69,7 +70,7 @@ h1 {
   font-size: 20px;
   margin-left: 20px;
 }
-.nav1:hover {
+.nav_link:hover {
     background-color: #af4c4c;
     color: white;
 /* .nav_link {
