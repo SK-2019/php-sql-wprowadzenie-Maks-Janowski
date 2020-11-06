@@ -36,7 +36,6 @@
                 echo("</tr>");
             }
         echo("</table>");
-    echo("<hr />");
 
           $sql=('SELECT * FROM pracownicy,organizacja where dzial=id_org and (dzial=1 or dzial=4)');
     $result=$conn->query($sql);
@@ -56,7 +55,6 @@
                 echo("</tr>");
             }
         echo("</table>");
-    echo("<hr />");
       
       
       
@@ -78,7 +76,6 @@
                 echo("</tr>");
             }
         echo("</table>");
-    echo("<hr />");
 
 ?>
 </body>
