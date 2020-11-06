@@ -102,7 +102,7 @@
  
       
       
-      $sql=('select id_pracownicy, imie, nazwa_dzial, zarobki from pracownicy,organizacja where dzial=id_org order by imie desc');
+      $sql=('select from pracownicy,organizacja where dzial=id_org order by imie desc');
     $result=$conn->query($sql);
         echo("<hr />");
         echo("<h3>Tabela</h3>");
