@@ -7,6 +7,7 @@
 <h1>Maksymilian Janowski 2Ti</h1>
 <a href="https://github.com/SK-2019/php-sql-wprowadzenie-Maks-Janowski"> link do mojego githuba </a>
    <a class="nav_link" href="pracownicy.php">Pracownicy</a>
+   <a class="nav_link" href="https://https://mj-app-app.herokuapp.com/">Heroku Strona</a>
 <?php
             function robot_pracownicy($nr_zad, $f_sql){
                 $conn = new mysqli("mysql-marcin-gaik.alwaysdata.net", "217182", "Marcin123", "marcin-gaik_php");
