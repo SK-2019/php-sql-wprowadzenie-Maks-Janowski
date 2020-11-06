@@ -59,7 +59,19 @@ h1 {
   background-color: #cdcfce;
   color: rgb(248, 16, 16);
 }
-
-.nav_link {
-  color: red;
+.nav1{
+  background-color: white;
+  color: black;
+  border: 2px solid #af4c4c;
+  padding: 10px 20px;
+  text-align: center;
+  display: inline-block;
+  font-size: 20px;
+  margin-left: 20px;
 }
+.nav1:hover {
+    background-color: #af4c4c;
+    color: white;
+/* .nav_link {
+  color: red;
+} */
