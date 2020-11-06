@@ -99,7 +99,9 @@
         echo("</table>");
         echo("<hr />");
 
- 
+         
+      
+      echo("<h3>SORTOWANIE</h3>");
       
       
       $sql=('select * from pracownicy,organizacja where dzial=id_org order by imie desc');
