@@ -44,6 +44,24 @@
         echo("</table>");
          
 
+   $result = $conn->query('SELECT * FROM pracownicy where (dzial=2 or dzial=3)');
+        echo("<hr />");
+        echo("<h3>Tabela pracowników z działu 2 oraz z 3</h3>");
+        echo("<table>");
+        echo("<th>id</th>");
+        echo("<th>imie</th>");
+        echo("<th>dzial</th>");
+        echo("<th>zarobki</th>");
+        echo("<th>data_urodzenia</th>");
+                while($row = $result->fetch_assoc()) {
+        echo("<tr>");
+        echo("<td>".$row["id_pracownicy"]."</td><td>".$row["imie"]."</td><td>".$row["dzial"]."</td><td>".$row["zarobki"]."</td><td>".$row["data_urodzenia"]."</td>"); 
+
+        echo("</tr>");
+    }
+        echo("</table>");
+   
+   
 ?>
     </body>
 </html>
