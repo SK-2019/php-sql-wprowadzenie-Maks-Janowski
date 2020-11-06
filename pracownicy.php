@@ -12,7 +12,7 @@
     require_once('conn.php');;
     $result=$conn->query('SELECT * FROM pracownicy,organizacja where dzial=id_org');//mysql
         echo("<hr />");
-        echo("<h3>Tabela Pracowników</h3>");
+        echo("<h3>Tabela pracowników</h3>");
         echo("<table border=1>");
         echo("<th>id</th>");
         echo("<th>imie</th>");
@@ -29,6 +29,8 @@
    
  
    $result = $conn->query('SELECT  * FROM pracownicy WHERE dzial=2');
+        echo("<hr />");
+        echo("<h3>Tabela pracowników z działu 2</h3>"); 
         echo("<table>");
         echo("<th>id</th>");
         echo("<th>imie</th>");
