@@ -100,7 +100,7 @@
         echo("<hr />");
 
             
-         <h1>Sortowanie</h1>
+         echo("<h3>Sortowanie</h3>")
 
 ?>
 </body>
