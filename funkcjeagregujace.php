@@ -1,3 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>Maksymilian Janowski 2Ti</h1>
+<a href="https://github.com/SK-2019/php-sql-wprowadzenie-Maks-Janowski"> link do mojego githuba </a>
+   <a class="nav_link" href="pracownicy.php">Pracownicy</a>
 <?php
             function robot_pracownicy($nr_zad, $f_sql){
                 $conn = new mysqli("mysql-marcin-gaik.alwaysdata.net", "217182", "Marcin123", "marcin-gaik_php");
@@ -91,3 +100,5 @@
                         }
     robot_min(5,'SELECT dzial,min(zarobki) as minimalne from pracownicy group by dzial');
 ?>
+            </body>
+</html>
