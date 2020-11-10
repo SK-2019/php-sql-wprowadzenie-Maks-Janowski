@@ -13,7 +13,7 @@
    <a class="nav_link" href="data.php"><b>Data<b></a>
 <?php
     require_once('conn.php');
-    $result=$conn->query('SELECT * FROM pracownicy,organizacja where dzial=id_org');//mysql
+    $result=$conn->query('select id_pracownicy, imie, nazwa_dzial, zarobki, year(curdate())-year(data_urodzenia) as wiek from pracownicy, organizacja where id_org=dzial", "Pracownicy + wiek:');
         echo("<hr />");
         echo("<h3>Tabela pracowników</h3>");
         echo("<table border=1>");
