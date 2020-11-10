@@ -17,15 +17,15 @@
         echo("<hr />");
         echo("<h3>Tabela pracowników</h3>");
         echo("<table border=1>");
-        echo("<th>id</th>");
+            echo("<th>id</th>");
 	    echo("<th>Imie</th>");
 	    echo("<th>Dział</th>");
 	    echo("<th>Zarobki</th>");
 	    echo("<th>Wiek</th>");
-            while($row=$result->fetch_assoc()){
-                echo("<tr>");
-  echo("<td>".$row['id_pracownicy']."</td><td>".$row['imie']."</td><td>".$row['nazwa_dzial']."</td><td>".$row['zarobki']."</td><td>".$row['wiek']."</td>");
-                echo("</tr>");
+                while($row=$result->fetch_assoc()){
+                    echo("<tr>");
+                        echo("<td>".$row['id_pracownicy']."</td><td>".$row['imie']."</td><td>".$row['nazwa_dzial']."</td><td>".$row['zarobki']."</td><td>".$row['wiek']."</td>");
+                    echo("</tr>");
             }
         echo("</table>");
    
