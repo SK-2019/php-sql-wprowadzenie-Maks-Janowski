@@ -30,34 +30,34 @@
                     }
                 echo("</table>");
         echo("<hr />");
-//         $sql=('SELECT nazwa_dzial,sum(zarobki) as suma from pracownicy,organizacja where imie like "%a" and dzial=id_org group by nazwa_dzial');
-//         $result=$conn->query($sql); //mysql
-//             echo("<h3>Suma zarobków wszystkich kobiet</h3>");//nazwa nad tabelą
-//             echo("<table border=1>");
-//             echo("<li>SQL: $sql");
-//             echo("<th>suma</th>");
-//             echo("<th>nazwa działu</th>");
-//                 while($row=$result->fetch_assoc()){
-//                     echo("<tr>");
-//                         echo("<td>".$row['suma']."</td><td>".$row['nazwa_dzial']."</td>");
-//                     echo("</tr>");
-//                 }
-//             echo("</table>");
-//     echo("<hr />");
-//     $sql=('SELECT nazwa_dzial,sum(zarobki) as suma from pracownicy,organizacja where imie not like "%a" and dzial=id_org and dzial=2 or dzial=3 group by dzial');
-//     $result=$conn->query($sql); //mysql
-//         echo("<h3>Suma zarobków mężczyzn pracujących w dziale 2 i 3</h3>");//nazwa nad tabelą
-//         echo("<table border=1>");
-//         echo("<li>SQL: $sql");
-//         echo("<th>suma</th>");
-//         echo("<th>nazwa działu</th>");
-//             while($row=$result->fetch_assoc()){
-//                 echo("<tr>");
-//                     echo("<td>".$row['suma']."</td><td>".$row['nazwa_dzial']."</td>");
-//                 echo("</tr>");
-//             }
-//         echo("</table>");
-// echo("<hr />");
+        $sql=('SELECT nazwa_dzial,sum(zarobki) as suma from pracownicy,organizacja where imie like "%a" and dzial=id_org group by nazwa_dzial');
+        $result=$conn->query($sql); //mysql
+            echo("<h3>Suma zarobków wszystkich kobiet</h3>");//nazwa nad tabelą
+            echo("<table border=1>");
+            echo("<li>SQL: $sql");
+            echo("<th>suma</th>");
+            echo("<th>nazwa działu</th>");
+                while($row=$result->fetch_assoc()){
+                    echo("<tr>");
+                        echo("<td>".$row['suma']."</td><td>".$row['nazwa_dzial']."</td>");
+                    echo("</tr>");
+                }
+            echo("</table>");
+    echo("<hr />");
+    $sql=('SELECT nazwa_dzial,sum(zarobki) as suma from pracownicy,organizacja where imie not like "%a" and dzial=id_org and dzial=2 or dzial=3 group by dzial');
+    $result=$conn->query($sql); //mysql
+        echo("<h3>Suma zarobków mężczyzn pracujących w dziale 2 i 3</h3>");//nazwa nad tabelą
+        echo("<table border=1>");
+        echo("<li>SQL: $sql");
+        echo("<th>suma</th>");
+        echo("<th>nazwa działu</th>");
+            while($row=$result->fetch_assoc()){
+                echo("<tr>");
+                    echo("<td>".$row['suma']."</td><td>".$row['nazwa_dzial']."</td>");
+                echo("</tr>");
+            }
+        echo("</table>");
+echo("<hr />");
             
     
 //             $sql=('SELECT nazwa_dzial,dzial,avg(zarobki) as srednia from pracownicy,organizacja where dzial=id_org');
@@ -104,20 +104,20 @@ $sql=('SELECT nazwa_dzial,avg(zarobki) as srednia from pracownicy,organizacja wh
         echo("</table>");
 echo("<hr />");
             
-            $sql=('SELECT nazwa_dzial,count(imie) as ilosc from pracownicy,organizacja where dzial=id_org');
-    $result=$conn->query($sql); //mysql
-        echo("<h3>Ilu jest wszystkich pracowników</h3>");//nazwa nad tabelą
-        echo("<table border=1>");
-        echo("<li>SQL: $sql");
-        echo("<th>ilosc</th>");
-        echo("<th>nazwa działu</th>");
-            while($row=$result->fetch_assoc()){
-                echo("<tr>");
-                    echo("<td>".$row['ilosc']."</td><td>".$row['nazwa_dzial']."</td>");
-                echo("</tr>");
-            }
-        echo("</table>");
-echo("<hr />");
+//             $sql=('SELECT nazwa_dzial,count(imie) as ilosc from pracownicy,organizacja where dzial=id_org');
+//     $result=$conn->query($sql); //mysql
+//         echo("<h3>Ilu jest wszystkich pracowników</h3>");//nazwa nad tabelą
+//         echo("<table border=1>");
+//         echo("<li>SQL: $sql");
+//         echo("<th>ilosc</th>");
+//         echo("<th>nazwa działu</th>");
+//             while($row=$result->fetch_assoc()){
+//                 echo("<tr>");
+//                     echo("<td>".$row['ilosc']."</td><td>".$row['nazwa_dzial']."</td>");
+//                 echo("</tr>");
+//             }
+//         echo("</table>");
+// echo("<hr />");
             $sql=('SELECT nazwa_dzial,count(imie) as ilosc from pracownicy,organizacja where imie like "%a" and dzial=id_org and dzial=1 or dzial=3 group by dzial');
     $result=$conn->query($sql); //mysql
         echo("<h3>Ile kobiet pracuje łącznie w działach 1 i 3</h3>");//nazwa nad tabelą
