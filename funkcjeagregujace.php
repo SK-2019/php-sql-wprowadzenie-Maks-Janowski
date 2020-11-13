@@ -13,7 +13,17 @@
    <a class="nav_link" href="data.php"><b>Data<b></a>
 <?php
  
-            function robot_pracownicy($nr_zad, $f_sql){
+ 
+      
+      
+      
+      
+      
+      
+      echo("<h3>GROUP BY</h3>");
+      
+      
+      function robot_pracownicy($nr_zad, $f_sql){
                 $conn = new mysqli("mysql-marcin-gaik.alwaysdata.net", "217182", "Marcin123", "marcin-gaik_php");
                 $sql=$f_sql;
                 $result=$conn->query($sql);
