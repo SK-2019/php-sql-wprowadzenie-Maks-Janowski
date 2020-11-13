@@ -36,7 +36,7 @@
       
       
       
-       echo("<h3>Wiek poszczegolnych pracownikow (w latach) z dzialu serwis</h3>");
+            echo("<h3>Wiek poszczegolnych pracownikow (w latach) z dzialu serwis</h3>");
                         $sql=('SELECT * ,YEAR(curdate())-YEAR(data_urodzenia) as wiek FROM pracownicy,organizacja where dzial=id_org and nazwa_dzial="serwis"');
                     $result=$conn->query($sql);
                         echo("<table border=1>");
@@ -53,7 +53,8 @@
                                     echo("<td>".$row['id_pracownicy']."</td><td>".$row['imie']."</td><td>".$row['dzial']."</td><td>".$row['zarobki']."</td><td>".$row['nazwa_dzial']."</td><td>".$row['wiek']."</td><td>".$row['data_urodzenia']."</td>");
                                 echo("</tr>");
                             }
-
+                        echo("</table>");
+                        echo("<hr />");
  
                            echo("<h3>Suma lat wszystkich pracownikow</h3>");
                         $sql=('SELECT SUM(YEAR(CURDATE()) - YEAR(data_urodzenia)) as Suma from pracownicy');
