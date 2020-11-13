@@ -28,7 +28,8 @@
                     }
                 echo("</table>");
         echo("<hr />");
-        $sql=('SELECT nazwa_dzial,sum(zarobki) as suma from pracownicy,organizacja where imie like "%a" and dzial=id_org group by nazwa_dzial');
+        
+      $sql=('SELECT nazwa_dzial,sum(zarobki) as suma from pracownicy,organizacja where imie like "%a" and dzial=id_org group by nazwa_dzial');
         $result=$conn->query($sql); 
             echo("<h3>Suma zarobków wszystkich kobiet</h3>");
             echo("<table border=1>");
@@ -42,7 +43,8 @@
                 }
             echo("</table>");
     echo("<hr />");
-    $sql=('SELECT nazwa_dzial,sum(zarobki) as suma from pracownicy,organizacja where imie not like "%a" and dzial=id_org and dzial=2 or dzial=3 group by dzial');
+   
+      $sql=('SELECT nazwa_dzial,sum(zarobki) as suma from pracownicy,organizacja where imie not like "%a" and dzial=id_org and dzial=2 or dzial=3 group by dzial');
     $result=$conn->query($sql); //mysql
         echo("<h3>Suma zarobków mężczyzn pracujących w dziale 2 i 3</h3>");//nazwa nad tabelą
         echo("<table border=1>");
@@ -87,7 +89,9 @@ $sql=('SELECT nazwa_dzial,avg(zarobki) as srednia from pracownicy,organizacja wh
                 }
             echo("</table>");
     echo("<hr />");
-    $sql=('SELECT nazwa_dzial,avg(zarobki) as srednia from pracownicy,organizacja where imie not like "%a" and dzial=1 or dzial=2 and dzial=id_org group by nazwa_dzial');
+   
+      
+      $sql=('SELECT nazwa_dzial,avg(zarobki) as srednia from pracownicy,organizacja where imie not like "%a" and dzial=1 or dzial=2 and dzial=id_org group by nazwa_dzial');
     $result=$conn->query($sql); 
         echo("<h3>Średnia zarobków mężczyzn z działu 1 i 2</h3>");
         echo("<table border=1>");
@@ -116,7 +120,9 @@ echo("<hr />");
             }
         echo("</table>");
 echo("<hr />");
-            $sql=('SELECT nazwa_dzial,count(imie) as ilosc from pracownicy,organizacja where imie like "%a" and dzial=id_org and dzial=1 or dzial=3 group by dzial');
+      
+      
+      $sql=('SELECT nazwa_dzial,count(imie) as ilosc from pracownicy,organizacja where imie like "%a" and dzial=id_org and dzial=1 or dzial=3 group by dzial');
     $result=$conn->query($sql); 
         echo("<h3>Ile kobiet pracuje łącznie w działach 1 i 3</h3>");
         echo("<table border=1>");
