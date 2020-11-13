@@ -42,37 +42,23 @@ echo("<hr />");
                 }
             echo("</table>");
     echo("<hr />");
-    $sql=('SELECT nazwa_dzial,sum(zarobki) as suma from pracownicy,organizacja where imie not like "%a" and dzial=id_org and dzial=2 or dzial=3 group by dzial');
-    $result=$conn->query($sql); //mysql
-        echo("<h3>Suma zarobków mężczyzn pracujących w dziale 2 i 3</h3>");//nazwa nad tabelą
-        echo("<table border=1>");
-        echo("<li>SQL: $sql");
-        echo("<th>suma</th>");
-        echo("<th>nazwa działu</th>");
-            while($row=$result->fetch_assoc()){
-                echo("<tr>");
-                    echo("<td>".$row['suma']."</td><td>".$row['nazwa_dzial']."</td>");
-                echo("</tr>");
-            }
-        echo("</table>");
-echo("<hr />");
-         echo("test");
+//     $sql=('SELECT nazwa_dzial,sum(zarobki) as suma from pracownicy,organizacja where imie not like "%a" and dzial=id_org and dzial=2 or dzial=3 group by dzial');
+//     $result=$conn->query($sql); //mysql
+//         echo("<h3>Suma zarobków mężczyzn pracujących w dziale 2 i 3</h3>");//nazwa nad tabelą
+//         echo("<table border=1>");
+//         echo("<li>SQL: $sql");
+//         echo("<th>suma</th>");
+//         echo("<th>nazwa działu</th>");
+//             while($row=$result->fetch_assoc()){
+//                 echo("<tr>");
+//                     echo("<td>".$row['suma']."</td><td>".$row['nazwa_dzial']."</td>");
+//                 echo("</tr>");
+//             }
+//         echo("</table>");
+// echo("<hr />");
+
       
-      echo("<hr />");
-             require_once('conn.php');
-            $sql=('SELECT sum(zarobki) as suma from pracownicy');
-            $result=$conn->query($sql); //mysql
-                echo("<h3>Suma zarobków wszystkich pracowników</h3>");//nazwa nad tabelą
-                echo("<table border=1>");
-                echo("<li>SQL: $sql");
-                echo("<th>suma</th>");
-                    while($row=$result->fetch_assoc()){
-                        echo("<tr>");
-                            echo("<td>".$row['suma']."</td>");
-                        echo("</tr>");
-                    }
-                echo("</table>");
-        echo("<hr />");
+      
      
 //             $sql=('SELECT nazwa_dzial,dzial,avg(zarobki) as srednia from pracownicy,organizacja where dzial=id_org');
 //             $result=$conn->query($sql); //mysql
