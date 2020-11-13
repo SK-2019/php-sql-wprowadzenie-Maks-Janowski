@@ -118,22 +118,20 @@ echo("<hr />");
 //             }
 //         echo("</table>");
 // echo("<hr />");
-            $sql=('SELECT nazwa_dzial,count(imie) as ilosc from pracownicy,organizacja where imie like "%a" and dzial=id_org and dzial=1 or dzial=3 group by dzial');
-    $result=$conn->query($sql); //mysql
-        echo("<h3>Ile kobiet pracuje łącznie w działach 1 i 3</h3>");//nazwa nad tabelą
-        echo("<table border=1>");
-        echo("<li>SQL: $sql");
-        echo("<th>ilosc</th>");
-        echo("<th>nazwa działu</th>");
-            while($row=$result->fetch_assoc()){
-                echo("<tr>");
-                  echo("<p>".$row['ilosc']."</p>");
-                    echo("<p>".$row['nazwa_dzial']."</p>");
-               echo("<td>".$row['ilosc']."</td><td>".$row['nazwa_dzial']."</td>");
-                echo("</tr>");
-            }
-        echo("</table>");
-echo("<hr />");
+//             $sql=('SELECT nazwa_dzial,count(imie) as ilosc from pracownicy,organizacja where imie like "%a" and dzial=id_org and dzial=1 or dzial=3 group by dzial');
+//     $result=$conn->query($sql); //mysql
+//         echo("<h3>Ile kobiet pracuje łącznie w działach 1 i 3</h3>");//nazwa nad tabelą
+//         echo("<table border=1>");
+//         echo("<li>SQL: $sql");
+//         echo("<th>ilosc</th>");
+//         echo("<th>nazwa działu</th>");
+//             while($row=$result->fetch_assoc()){
+//                 echo("<tr>");
+//                echo("<td>".$row['ilosc']."</td><td>".$row['nazwa_dzial']."</td>");
+//                 echo("</tr>");
+//             }
+//         echo("</table>");
+// echo("<hr />");
       
       
       
@@ -144,7 +142,7 @@ echo("<hr />");
       
       
       function robot_pracownicy($nr_zad, $f_sql){
-                $conn = new mysqli("mysql-marcin-gaik.alwaysdata.net", "217182", "Marcin123", "marcin-gaik_php");
+                $conn = new mysqli("remotemysql.com", "WtbCi7xfxi", "BDDTxIAkhC", "WtbCi7xfxi");
                 $sql=$f_sql;
                 $result=$conn->query($sql);
                     echo("<table border=1>");
@@ -164,8 +162,8 @@ echo("<hr />");
     robot_pracownicy(1,'SELECT * FROM pracownicy');
 
             function robot_avg($nr_zad, $f_sql){
-                $conn = new mysqli("mysql-marcin-gaik.alwaysdata.net", "217182", "Marcin123", "marcin-gaik_php");
-                $sql=$f_sql;
+            $conn = new mysqli("remotemysql.com", "WtbCi7xfxi", "BDDTxIAkhC", "WtbCi7xfxi");
+               $sql=$f_sql;
                 $result=$conn->query($sql);
                     echo("<table border=1>");
                     echo("<h3>ZAD $nr_zad</h3>");
@@ -182,7 +180,7 @@ echo("<hr />");
     robot_avg(2,'SELECT dzial,avg(zarobki) as srednia from pracownicy group by dzial');
 
             function robot_count($nr_zad, $f_sql){
-                $conn = new mysqli("mysql-marcin-gaik.alwaysdata.net", "217182", "Marcin123", "marcin-gaik_php");
+                $conn = new mysqli("remotemysql.com", "WtbCi7xfxi", "BDDTxIAkhC", "WtbCi7xfxi");
                 $sql=$f_sql;
                 $result=$conn->query($sql);
                     echo("<table border=1>");
@@ -200,7 +198,7 @@ echo("<hr />");
     robot_count(3,'SELECT dzial,count(imie) as ilosc from pracownicy group by dzial');
 
             function robot_sum($nr_zad, $f_sql){
-                $conn = new mysqli("mysql-marcin-gaik.alwaysdata.net", "217182", "Marcin123", "marcin-gaik_php");
+                 $conn = new mysqli("remotemysql.com", "WtbCi7xfxi", "BDDTxIAkhC", "WtbCi7xfxi");
                 $sql=$f_sql;
                 $result=$conn->query($sql);
                     echo("<table border=1>");
@@ -218,7 +216,7 @@ echo("<hr />");
     robot_sum(4,'SELECT dzial,sum(zarobki) as suma from pracownicy group by dzial');
 
             function robot_min($nr_zad, $f_sql){
-                    $conn = new mysqli("mysql-marcin-gaik.alwaysdata.net", "217182", "Marcin123", "marcin-gaik_php");
+                      $conn = new mysqli("remotemysql.com", "WtbCi7xfxi", "BDDTxIAkhC", "WtbCi7xfxi");
                     $sql=$f_sql;
                     $result=$conn->query($sql);
                         echo("<table border=1>");
