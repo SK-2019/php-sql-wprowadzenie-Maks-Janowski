@@ -56,7 +56,7 @@ echo("<hr />");
             }
         echo("</table>");
 echo("<hr />");
-         
+         echo("test");
       
       echo("<hr />");
              require_once('conn.php');
