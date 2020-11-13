@@ -127,7 +127,8 @@ echo("<hr />");
         echo("<th>nazwa działu</th>");
             while($row=$result->fetch_assoc()){
                 echo("<tr>");
-                    echo("<td>".$row['ilosc']."</td><td>".$row['nazwa_dzial']."</td>");
+                  echo("<p>".$row['ilosc']."</p><p>".$row['nazwa_dzial']."</p>");
+               echo("<td>".$row['ilosc']."</td><td>".$row['nazwa_dzial']."</td>");
                 echo("</tr>");
             }
         echo("</table>");
