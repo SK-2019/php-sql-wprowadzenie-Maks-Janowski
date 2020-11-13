@@ -33,9 +33,59 @@
                             }
                         echo("</table>");
                         echo("<hr />");
+      
+      
+      
+       echo("<h3>Wiek poszczegolnych pracownikow (w latach) z dzialu serwis</h3>");
+                        $sql=('SELECT * ,YEAR(curdate())-YEAR(data_urodzenia) as wiek FROM pracownicy,organizacja where dzial=id_org and nazwa_dzial="serwis"');
+                    $result=$conn->query($sql);
+                        echo("<table border=1>");
+                        echo("<li>SQL: $sql");
+                        echo("<th>id</th>");
+                        echo("<th>imie</th>");
+                        echo("<th>dzial</th>");
+                        echo("<th>zarobki</th>");
+                        echo("<th>nazwa działu</th>");
+                        echo("<th>wiek</th>");
+                        echo("<th>data_urodzenia</th>");
+                            while($row=$result->fetch_assoc()){
+                                echo("<tr>");
+                                    echo("<td>".$row['id_pracownicy']."</td><td>".$row['imie']."</td><td>".$row['dzial']."</td><td>".$row['zarobki']."</td><td>".$row['nazwa_dzial']."</td><td>".$row['wiek']."</td><td>".$row['data_urodzenia']."</td>");
+                                echo("</tr>");
+                            }
 
  
-   
+                           echo("<h3>Suma lat wszystkich pracownikow</h3>");
+                        $sql=('SELECT SUM(YEAR(CURDATE()) - YEAR(data_urodzenia)) as Suma from pracownicy');
+                    $result=$conn->query($sql);//mysql
+                        echo("<table border=1>");
+                        echo("<li>SQL: $sql");
+                        echo("<th>Suma</th>");
+                            while($row=$result->fetch_assoc()){
+                                echo("<tr>");
+                                    echo("<td>".$row['Suma']."</td>");
+                                echo("</tr>");
+                            }
+                        echo("</table>");
+                        echo("<hr />");
+      
+      
+                              echo("<h3>Suma lat pracownikow z dzialu handel</h3>");
+                        $sql=('SELECT SUM(YEAR(CURDATE()) - YEAR(data_urodzenia)) as Suma from pracownicy,organizacja where nazwa_dzial="handel"');
+                    $result=$conn->query($sql);//mysql
+                        echo("<table border=1>");
+                        echo("<li>SQL: $sql");
+                        echo("<th>Suma</th>");
+                            while($row=$result->fetch_assoc()){
+                                echo("<tr>");
+                                    echo("<td>".$row['Suma']."</td>");
+                                echo("</tr>");
+                            }
+                        echo("</table>");
+                        echo("<hr />");
+      
+      
+      
 ?>
     </body>
 </html>
