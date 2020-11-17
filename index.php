@@ -5,11 +5,6 @@
 </head>
 <body>
 <h1>Maksymilian Janowski 2Ti</h1>
-
-     <form action="strona.php" method="POST">
-     <input type="text" name="imie"></br>
-     <input type="submit" value="wyślij do strona.php">
-     </form>
    
    <a href="https://github.com/SK-2019/php-sql-wprowadzenie-Maks-Janowski"> link do mojego githuba </a>
    <a class="nav_link" href="pracownicy.php"><b>Pracownicy<b></a>
@@ -17,6 +12,9 @@
    <a class="nav_link" href="pracownicy_organizacja.php"><b>Pracownicy Organizacja<b></a>
    <a class="nav_link" href="/">Strona Glowna</a>  
    <a class="nav_link" href="data.php"><b>Data<b></a>
+   <a class="nav_link" href="formularz.html"><b>Formularz<b></a>
+        
+        
 <?php
    require_once('conn.php');
 
