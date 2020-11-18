@@ -16,11 +16,22 @@
   <a class="nav_link" href="data.php"><b>Data<b></a>
   <a class="nav_link" href="formularz.html"><b>Formularz<b></a>
        
-     
-     <form action="strona.php" method="POST">
-     <input type="text" name="imie"></br>
-     <input type="submit" value="wyślij do strona.php">
-     </form>
+	<form class="formularz1" action="strona.php" method="POST">
+        <h2 class='naglowek'>Formularz:</h2>
+	<ul>
+	<li>
+		<input type="text" name="imie" class="field-style field-split align-left" placeholder="Imię" />
+		<input type="text" name="nazwisko" class="field-style field-split align-right" placeholder="Nazwisko" />
+	</li>
+	<li>
+	<input type="text" name="klasa" class="field-style field-full align-none" placeholder="Klasa" />
+	</li>
+	<li>
+	<input type="submit" value="Wyślij" />
+	</li>
+	</ul>
+	</form>
 
-       </body>
-</html>
+       
+   
+    </html>
