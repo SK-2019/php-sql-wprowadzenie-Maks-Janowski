@@ -23,7 +23,6 @@
    dzial: <input type="text" name="dzial"></br>
     zarobki: <input type="text" name="zarobki"></br>
     data_urodzenia: <input type="text" name="data_urodzenia"></br>
-    adres: <input type="text" name="adres"></br>
     <input type="submit" value="wyślij do insert.php">
   </form>
 
