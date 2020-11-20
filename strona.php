@@ -2,11 +2,12 @@
 
 echo("Witam na strona.php");
 
-echo($_POST["id"]);
 echo($_POST["imie"]);
+echo($_POST["dzial"]);
+echo($_POST["zarobki"]);
 
   require_once('conn.php');
-$sql = "INSERT INTO `pracownicy`(`id_pracownicy`, `imie`, `dzial`, `zarobki`, `data_urodzenia`) VALUES (null,john,2,70,1985-04-15)";
+$sql = "INSERT INTO pracownicy(`id_pracownicy`, `imie`, `dzial`, `zarobki`) VALUES(NULL,'".$_POST['imie']."', '".$_POST['dzial']."', '".$_POST['zarobki']."')";
   
   if ($conn->query($sql) === TRUE) {
     echo "New record created successfully";
