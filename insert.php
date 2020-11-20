@@ -49,7 +49,7 @@ echo("<table border=1>");
             echo("<td>".$row["id_pracownicy"]."</td><td>".$row["imie"]."</td><td>".$row["dzial"]."</td><td>".$row["zarobki"]."</td><td>".$row["data_urodzenia"]."</td>");
             echo("<td><form action=usuwanie.php method=POST>");
             echo("<input type='hidden' name='id' value=".$row['id_pracownicy'].">");
-            echo("<input type=submit value=X>");
+            echo("<input type=submit value=U>");
             echo("</form></td>");
             echo("</tr>");}
 echo("</table>");
