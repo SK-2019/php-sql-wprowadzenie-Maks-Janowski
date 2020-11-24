@@ -13,6 +13,7 @@
    <a class="nav_link" href="/">Strona Glowna</a>  
    <a class="nav_link" href="data.php"><b>Data<b></a>
    <a class="nav_link" href="danedobazy.php"><b>Danedobazy<b></a>
+         <a class="nav_link" href="insert.php"><b>Formularz<b></a>
         
         
 <?php
