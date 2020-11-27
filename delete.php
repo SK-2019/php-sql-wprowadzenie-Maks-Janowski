@@ -28,6 +28,7 @@
   
   if ($conn->query($sql) === TRUE) {
     echo("Record deleted successfully!");
+    header('Location:https://mj-app-app.herokuapp.com/danedobazy.php');
   } else {
     echo("Error: " . $sql . "<br>" . $conn->error);
   }
