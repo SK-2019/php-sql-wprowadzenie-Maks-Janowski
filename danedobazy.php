@@ -28,8 +28,8 @@
 
 	 <h3>Usun pracownika z tabelki:</h3>	  
 	  <form action="delete.php" method="POST">
-       <input type="text" name="id" placeholder="ID"></br>
-   	<input type="submit" value="ok">
+       <input type="text" name="id" placeholder="Id pracownika"></br>
+   	<input type="submit" value="usun">
 	</form>
 
 	  
