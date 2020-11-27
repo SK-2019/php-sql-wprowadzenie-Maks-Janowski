@@ -52,8 +52,8 @@
                     echo("<td>".$row["id_pracownicy"]."</td><td>".$row["imie"]."</td><td>".$row["dzial"]."</td><td>".$row["zarobki"]."</td><td>".$row["data_urodzenia"]."</td><td>".$row["nazwa_dzial"]."</td>"); 
                       echo("<td><form action='delete.php' method=POST>");
                       echo("<name='id' value='".$row['id_pracownicy']."'>");
-                      echo("<input type='number' name='id' value='".$row['id_pracownicy']."'>");
-		     echo("<input type='submit' value='usun'");
+                      echo("<input type='text' name='id' value='".$row['id_pracownicy']."'>");
+		     echo("<input type='submit' value='usun'>");
 		    echo("</form></td>");
                 echo("</tr>");
             }
