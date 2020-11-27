@@ -53,7 +53,6 @@
                       echo("<td><form action='delete.php' method=POST>");
                       echo("<name='id' value='".$row['id_pracownicy']."'>");
                       echo("<input type='text' name='id' value='".$row['id_pracownicy']."'>");
-		      echo("<form action='elete.php' method=POST>")
 		     echo("<input type='submit' value='usun'");
 		    echo("</form></td>");
                 echo("</tr>");
