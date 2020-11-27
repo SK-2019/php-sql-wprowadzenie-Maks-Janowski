@@ -23,7 +23,7 @@
 
   require_once("connect.php");
 
-  $sql = "DELETE FROM pracownicy where id_pracownicy='".$_POST['id']."'";
+  $sql = "DELETE FROM pracownicy WHERE id_pracownicy='".$_POST['id']."'";
   
   
   if ($conn->query($sql) === TRUE) {
