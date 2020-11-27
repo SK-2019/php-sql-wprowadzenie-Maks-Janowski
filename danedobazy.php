@@ -36,7 +36,7 @@
 	  <?php	  
  require_once('conn.php');
 
-    $sql=('SELECT * FROM pracownicy,organizacja where dzial=id_org');
+    $sql=('SELECT * FROM pracownicy');
     $result=$conn->query($sql);
         echo("<hr />");
         echo("<h3>Tabela Pracowników</h3>");
@@ -48,13 +48,9 @@
         echo("<th>zarobki</th>");
         echo("<th>nazwa_dzial</th>");
         echo("<th>data_urodzenia</th>");
-	echo("<th>Delete</th>");
             while($row=$result->fetch_assoc()){
                 echo("<tr>");
                 echo("<td>".$row['id_pracownicy']."</td><td>".$row['imie']."</td><td>".$row['dzial']."</td><td>".$row['zarobki']."</td><td>".$row['nazwa_dzial']."</td><td>".$row['data_urodzenia']."</td>");
-		 echo("<td><form action='delete.php' method=POST")
-		 echo("<input type='hidden' name='id' value='".$row['id_pracownicy']."'>"); 
-		 echo("<input type=submit value='usun'>");
 		echo("</tr>");
             }
         echo("</table>");
