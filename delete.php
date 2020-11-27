@@ -18,13 +18,7 @@
 
 <?php
 
-	require_once("connect.php");
-	$sql = "DELETE FROM pracownicy WHERE id_pracownicy='".$_POST['id']."'";
-	if ($conn->query($sql) === TRUE) {
-        echo("<p class='precord'>  Usunieto pracownika </p>");
-      } else {
-        echo("<p class='precord'>'Error: ' . $sql . '<br>' . $conn->error</p>");
-      }
+
 
 
 
