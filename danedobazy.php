@@ -26,8 +26,40 @@
     <input type="submit" value="wyślij do insert.php">
   </form>
 
+<?php	  
+	  
+	   require_once('conn.php');
 
+   $sql=('SELECT * FROM pracownicy');
+   $result=$conn->query($sql);
+       echo("<hr />");
+       echo("<h3>Tabela Pracowników</h3>");
+       echo("<li>$sql");
+       echo("<table border=1>");
+       echo("<th>id</th>");
+       echo("<th>imie</th>");
+       echo("<th>dzial</th>");
+       echo("<th>zarobki</th>");
+       echo("<th>delete</th>");
+           while($row=$result->fetch_assoc()){
+               echo("<tr>");
+               echo("<td>".$row['id_pracownicy']."</td>
+               <td>".$row['imie']."</td>
+               <td>".$row['dzial']."</td>
+               <td>".$row['zarobki']."</td>
+               <td>
+              <form action = 'delete.php' method ='post'>
+                <input type='text' name='id' placeholder='usun' value'" .$row["id"]. ">
+                <input type='submit' value='usun'>               
+                </form>
+               
+               
+               </td>");   
+               echo("</tr>");
+           }
+       echo("</table>");
 
+?>
        </body>
 </html>
 	  
