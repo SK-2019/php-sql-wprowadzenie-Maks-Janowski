@@ -21,7 +21,7 @@
             
   echo("<li>ID: ".$_POST['id']."</li>");
 
-  require_once("connect.php");
+  require_once("conn.php");
 
   $sql = "DELETE FROM pracownicy WHERE id_pracownicy='".$_POST['id']."'";
   
