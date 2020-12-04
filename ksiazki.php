@@ -39,20 +39,26 @@ $result=$conn->query($sql);
 echo("<hr />");
 
       
- $sql=('SELECT * FROM biblAutor');
+      
+      
+      
+      require_once('conn.php');
+
+$sql=('SELECT * FROM biblAutor');
 $result=$conn->query($sql);
+    echo("<hr />");
     echo("<h3>Biblioteka Autor</h3>");
     echo("<li>$sql");
-    echo("<table border=1>");
-    echo("<th>id</th>");
-    echo("<th>autor</th>");
+    echo("<select name='title' id='title'>");
+  
         while($row=$result->fetch_assoc()){
-            echo("<tr>");
-            echo("<td>".$row['id']."</td><td>".$row['autor']."</td>");
-            echo("</tr>");
+           
+            echo("<option value=".$row['id'].">".$row['autor']."</option>");
         }
-    echo("</table>");
+    echo("</select>");
 echo("<hr />");
+      
+
       
       
       
