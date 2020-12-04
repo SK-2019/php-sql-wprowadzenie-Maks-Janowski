@@ -36,10 +36,7 @@ $result=$conn->query($sql);
            /*echo("<option value=2>tytul jakis</option>");*/
         }
     echo("</select>");
-echo("<hr />");
 
-      
-      
       
       
       require_once('conn.php');
