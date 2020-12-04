@@ -59,7 +59,7 @@ echo("<hr />");
       
       
       
-     $sql=('SELECT * FROM biblAutor, biblTytul, biblAutor_biblTytul WHERE biblAutor_id=biblAutor.id and biblTytul_id=biblTytul.id');
+     $sql=('SELECT * FROM biblAutor, biblTytul, biblAutor_biblTytul WHERE biblAutor_id=id_aut and biblTytul_id=id_tyt');
 $result=$conn->query($sql);
     echo("<h3>Biblioteka Autor i Tytul</h3>");
     echo("<li>$sql");
