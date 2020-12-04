@@ -42,7 +42,6 @@ echo("<hr />");
       
  $sql=('SELECT * FROM biblAutor');
 $result=$conn->query($sql);
-    echo("<hr />");
     echo("<h3>Biblioteka Autor</h3>");
     echo("<li>$sql");
     echo("<table border=1>");
@@ -60,7 +59,6 @@ echo("<hr />");
       
       $sql=('SELECT * FROM biblAutor_biblTytul');
 $result=$conn->query($sql);
-    echo("<hr />");
     echo("<h3>Biblioteka Autor i tytul</h3>");
     echo("<li>$sql");
     echo("<table border=1>");
