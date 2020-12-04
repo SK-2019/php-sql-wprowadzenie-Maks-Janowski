@@ -26,7 +26,7 @@ require_once('conn.php');
 $sql=('SELECT * FROM biblTytul');
 $result=$conn->query($sql);
     echo("<hr />");
-    echo("<h3>Biblioteka</h3>");
+    echo("<h3>Biblioteka Tytul</h3>");
     echo("<li>$sql");
     echo("<table border=1>");
     echo("<th>id</th>");
@@ -39,6 +39,41 @@ $result=$conn->query($sql);
     echo("</table>");
 echo("<hr />");
 
+      
+ $sql=('SELECT * FROM biblAutor');
+$result=$conn->query($sql);
+    echo("<hr />");
+    echo("<h3>Biblioteka Autor</h3>");
+    echo("<li>$sql");
+    echo("<table border=1>");
+    echo("<th>id</th>");
+    echo("<th>autor</th>");
+        while($row=$result->fetch_assoc()){
+            echo("<tr>");
+            echo("<td>".$row['id']."</td><td>".$row['autor']."</td>");
+            echo("</tr>");
+        }
+    echo("</table>");
+echo("<hr />");
+      
+      
+      
+      $sql=('SELECT * FROM biblAutor_biblTytul');
+$result=$conn->query($sql);
+    echo("<hr />");
+    echo("<h3>Biblioteka Autor i tytul</h3>");
+    echo("<li>$sql");
+    echo("<table border=1>");
+    echo("<th>id</th>");
+    echo("<th>biblAutor_id</th>");
+    echo("<th>biblTytul_id</th>");
+        while($row=$result->fetch_assoc()){
+            echo("<tr>");
+            echo("<td>".$row['id']."</td><td>".$row['biblAutor_id']."</td><td>".$row['biblTytul_id']."</td>");
+            echo("</tr>");
+        }
+    echo("</table>");
+echo("<hr />");
 
 
 
