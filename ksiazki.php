@@ -23,7 +23,7 @@
 
 require_once('conn.php');
 
-$sql=('SELECT * FROM biblTytul');
+/*$sql=('SELECT * FROM biblTytul');
 $result=$conn->query($sql);
     echo("<hr />");
     echo("<h3>Biblioteka Tytul</h3>");
@@ -33,11 +33,11 @@ $result=$conn->query($sql);
         while($row=$result->fetch_assoc()){
            
             /*echo("<option value=".$row['id'].">".$row['tytul']."</option>");*/
-          echo("<option value=2>tytul jakis</option>");
+  /*        echo("<option value=2>tytul jakis</option>");
         }
     echo("</select>");
 echo("<hr />");
-
+*/
       
  $sql=('SELECT * FROM biblAutor');
 $result=$conn->query($sql);
@@ -56,9 +56,9 @@ echo("<hr />");
       
       
       
-      $sql=('SELECT * FROM biblAutor_biblTytul');
+      $sql=('SELECT * FROM biblAutor_biblTytul, biblAutor, biblTytul WHERE biblAutor_id=biblAutor.id and biblTytul_id=biblTytul.id');
 $result=$conn->query($sql);
-    echo("<h3>Biblioteka Autor i tytul</h3>");
+    echo("<h3>Biblioteka Autor i Tytul</h3>");
     echo("<li>$sql");
     echo("<table border=1>");
     echo("<th>id</th>");
