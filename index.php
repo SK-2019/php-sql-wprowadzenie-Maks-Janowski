@@ -14,7 +14,7 @@
    <a class="nav_link" href="data.php"><b>Data<b></a>
    <a class="nav_link" href="danedobazy.php"><b>Danedobazy<b></a>
    <a class="nav_link" href="function.php"><b>Funkcja<b></a>
-            
+   <a class="nav_link" href="ksiazki.php"><b>Biblioteka<b></a> 
         
         
 <?php
