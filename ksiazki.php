@@ -32,8 +32,8 @@ $result=$conn->query($sql);
   
         while($row=$result->fetch_assoc()){
            
-            echo("<option value=".$row['id'].">".$row['tytul']."</option>");
-          
+            /*echo("<option value=".$row['id'].">".$row['tytul']."</option>");*/
+          echo("<option value=2>tytul jakis</option>");
         }
     echo("</select>");
 echo("<hr />");
