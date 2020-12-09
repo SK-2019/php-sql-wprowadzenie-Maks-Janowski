@@ -4,6 +4,22 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <div class=""container">
+  <div class="item colorRed">
+      <h1>Maksymilian Janowski 2Ti</h1>
+        <h1 class="title"></h1>
+     </div>
+     <div class="item colorBlue">
+         Link do mojego githuba:
+  <ul>
+      <li class="item_link"><a class="https://github.com/SK-2019/php-sql-wprowadzenie-Maks-Janowski" href=""></a></li>                          
+  </ul>                              
+   </div>
+     <div class="item colorGreen">
+        </div>
+       </div>
+   </body>   
+   <body>
 <h1>Maksymilian Janowski 2Ti</h1>
    
    <a href="https://github.com/SK-2019/php-sql-wprowadzenie-Maks-Janowski"> link do mojego githuba </a>
