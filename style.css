@@ -76,3 +76,23 @@ h1 {
 /* .nav_link {
   color: red;
 } */
+  
+  
+  .item_link{
+  margin: 10px;
+  }
+
+ .colorRed {
+  background-color: red;
+  width: 100%;
+}
+
+.colorBlue {
+  background-color: lightblue;
+  width: 50%;
+}
+
+.colorGreen {
+  background-color: lightgreen;
+  width: 50%;
+}
