@@ -77,27 +77,27 @@ h1 {
   color: red;
 } */
   
-  .container {
+.container {
   background-color: lightcoral;
   display: flex;
   flex-wrap: wrap;
 }
-  
-  .item_link{
-  margin: 10px;
-  }
 
- .colorRed {
+.item_link {
+  margin: 20px;
+}
+
+.colorRed {
   background-color: red;
   width: 100%;
 }
 
 .colorBlue {
   background-color: lightblue;
-  width: 50%;
+  width: 40%;
 }
 
 .colorGreen {
   background-color: lightgreen;
-  width: 50%;
+  width: 60%;
 }
