@@ -16,7 +16,14 @@
       <div class="item colorGreen">
        <ul>
         <li class="item_link"><a class="" href="https://github.com/SK-2019/php-sql-wprowadzenie-Maks-Janowski">Github</a></li>
+        <li class="item_link"><a class="/" href="funkcjeagregujace.php">Strona Glowna</a></li>
         <li class="item_link"><a class="" href="pracownicy.php">Pracownicy</a></li>
+        <li class="item_link"><a class="" href="pracownicy_organizacja.php">Pracownicy Organizacja</a></li>        
+        <li class="item_link"><a class="" href="funkcjeagregujace.php">Funkcje Agregujace</a></li>
+        <li class="item_link"><a class="" href="data.php">Data</a></li>
+        <li class="item_link"><a class="" href="danedobazy.php">Dane Do Bazy</a></li>
+        <li class="item_link"><a class="" href="function.php">Funkcja</a></li>
+        <li class="item_link"><a class="" href="ksiazki.php>Biblioteka</a></li>
        </ul>    
      </div>
     </div>
@@ -25,13 +32,13 @@
    <body>
 <h1>Maksymilian Janowski 2Ti</h1>
    
-   <a href="https://github.com/SK-2019/php-sql-wprowadzenie-Maks-Janowski"> link do mojego githuba </a>
-   <a class="nav_link" href="pracownicy.php"><b>Pracownicy<b></a>
-   <a class="nav_link" href="funkcjeagregujace.php"><b>Funkcje Agregujace<b></a>
-   <a class="nav_link" href="pracownicy_organizacja.php"><b>Pracownicy Organizacja<b></a>
-   <a class="nav_link" href="/">Strona Glowna</a>  
-   <a class="nav_link" href="data.php"><b>Data<b></a>
-   <a class="nav_link" href="danedobazy.php"><b>Danedobazy<b></a>
+   //<a href="https://github.com/SK-2019/php-sql-wprowadzenie-Maks-Janowski"> link do mojego githuba </a>
+   //<a class="nav_link" href="pracownicy.php"><b>Pracownicy<b></a>
+   //<a class="nav_link" href="funkcjeagregujace.php"><b>Funkcje Agregujace<b></a>
+   //<a class="nav_link" href="pracownicy_organizacja.php"><b>Pracownicy Organizacja<b></a>
+   //<a class="nav_link" href="/">Strona Glowna</a>  
+   //<a class="nav_link" href="data.php"><b>Data<b></a>
+   //<a class="nav_link" href="danedobazy.php"><b>Danedobazy<b></a>
    <a class="nav_link" href="function.php"><b>Funkcja<b></a>
    <a class="nav_link" href="ksiazki.php"><b>Biblioteka<b></a> 
         
