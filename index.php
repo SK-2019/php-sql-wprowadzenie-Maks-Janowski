@@ -14,7 +14,7 @@
        <h1> Menu Boczne: </h1>
        <ul>
         <li class="item_link"><a class="" href="https://github.com/SK-2019/php-sql-wprowadzenie-Maks-Janowski">Github</a></li>
-        <li class="item_link"><a class="/" href="/">Strona Glowna</a></li>
+        <li class="item_link"><a class="" href="/">Strona Glowna</a></li>
         <li class="item_link"><a class="" href="pracownicy.php">Pracownicy</a></li>
         <li class="item_link"><a class="" href="pracownicy_organizacja.php">Pracownicy Organizacja</a></li>        
         <li class="item_link"><a class="" href="funkcjeagregujace.php">Funkcje Agregujace</a></li>
