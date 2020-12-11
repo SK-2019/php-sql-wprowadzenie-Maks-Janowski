@@ -10,7 +10,7 @@
 }
 
 .colorRed {
-  background-color: red;
+  background-color: lightred;
   width: 100%;
 }
 
@@ -21,7 +21,7 @@
 
 .colorGreen {
   background-color: lightgreen;
-  width: 67%;
+  width: 65%;
   padding: 30px;
 }
 
