@@ -24,13 +24,12 @@
         <li class="item_link"><a class="" href="ksiazki.php">Biblioteka</a></li>
        </ul>   
      </div>
-      <div class="item colorGreen"> 
-     </div>
+<!--       <div class="item colorGreen"> 
+     </div> -->
   </body>
   
-
  <body>       
-<?php
+ <?php
    require_once('conn.php');
 
     $sql=('SELECT * FROM pracownicy,organizacja where dzial=id_org');
@@ -127,5 +126,5 @@ echo("<hr />");
 
    
 ?>
-</body>
+     </body>
    </html>
