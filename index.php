@@ -29,7 +29,7 @@
   </body>
   
 
-        
+ <body>       
 <?php
    require_once('conn.php');
 
@@ -127,5 +127,5 @@ echo("<hr />");
 
    
 ?>
-
+</body>
    </html>
