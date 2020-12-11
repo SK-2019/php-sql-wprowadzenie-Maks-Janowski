@@ -26,11 +26,9 @@
         <li class="item_link"><a class="" href="ksiazki.php>Biblioteka</a></li>
        </ul>    
      </div>
-    </div>
   </body>
   
-   <body>
-        
+
         
 <?php
    require_once('conn.php');
@@ -129,5 +127,5 @@ echo("<hr />");
 
    
 ?>
-</body>
+
    </html>
