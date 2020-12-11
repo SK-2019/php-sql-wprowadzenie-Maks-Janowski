@@ -11,14 +11,13 @@
         <h1 class="tltle"></h1>
       </div>
       <div class="item colorBlue">
-     Link:
-       <ul>
-        <li class="item_link"><a class="" href="https://github.com/SK-2019/php-sql-wprowadzenie-Maks-Janowski">link</a></li>
-       </ul>
-       
+       <h1> Linki: </h1>
      </div>
       <div class="item colorGreen">
-         </div>
+       <ul>
+        <li class="item_link"><a class="" href="https://github.com/SK-2019/php-sql-wprowadzenie-Maks-Janowski">Github</a></li>
+       </ul>    
+     </div>
     </div>
   </body>
   
