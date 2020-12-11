@@ -21,7 +21,7 @@
         <li class="item_link"><a class="" href="data.php">Data</a></li>
         <li class="item_link"><a class="" href="danedobazy.php">Dane Do Bazy</a></li>
         <li class="item_link"><a class="" href="function.php">Funkcja</a></li>
-        <li class="item_link"><a class="" href="ksiazki.php>Biblioteka</a></li>
+        <li class="item_link"><a class="" href="ksiazki.php">Biblioteka</a></li>
        </ul>   
      </div>
       <div class="item colorGreen"> 
