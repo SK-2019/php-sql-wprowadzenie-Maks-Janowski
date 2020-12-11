@@ -26,9 +26,8 @@
      </div>
 <!--       <div class="item colorGreen"> 
      </div> -->
-  </body>
-  
- <body>       
+ 
+       
  <?php
    require_once('conn.php');
 
