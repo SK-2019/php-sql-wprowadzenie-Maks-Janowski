@@ -1,5 +1,5 @@
 .container {
-  background-color: lightcoral;
+  background-color: rgb(250, 230, 175);
   display: flex;
   flex-wrap: wrap;
 }
@@ -21,7 +21,8 @@
 
 .colorGreen {
   background-color: lightgreen;
-  width: 70%;
+  width: 65%;
+  padding: 20px;
 }
 
 ul {
