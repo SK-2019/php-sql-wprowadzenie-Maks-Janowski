@@ -25,6 +25,7 @@
        </ul>   
      </div>
       <div class="item colorGreen"> 
+       <h1> Tresc Strony </h1>
        <?php
    require_once('conn.php');
 
