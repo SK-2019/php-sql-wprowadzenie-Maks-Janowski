@@ -24,6 +24,18 @@
   width: 70%;
 }
 
+ul {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+  background-color: lightcoral;
+  padding: 10px;
+}
+
+
+
 
 body {
   background-color: rgb(250, 230, 175);
