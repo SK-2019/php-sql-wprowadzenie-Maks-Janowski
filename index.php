@@ -11,9 +11,7 @@
         <h1 class="tltle"></h1>
       </div>
       <div class="item colorBlue">
-       <h1> Linki: </h1>
-     </div>
-      <div class="item colorGreen">
+       <h1> Menu Boczne: </h1>
        <ul>
         <li class="item_link"><a class="" href="https://github.com/SK-2019/php-sql-wprowadzenie-Maks-Janowski">Github</a></li>
         <li class="item_link"><a class="/" href="/">Strona Glowna</a></li>
@@ -24,7 +22,9 @@
         <li class="item_link"><a class="" href="danedobazy.php">Dane Do Bazy</a></li>
         <li class="item_link"><a class="" href="function.php">Funkcja</a></li>
         <li class="item_link"><a class="" href="ksiazki.php>Biblioteka</a></li>
-       </ul>    
+       </ul>   
+     </div>
+      <div class="item colorGreen"> 
      </div>
   </body>
   
