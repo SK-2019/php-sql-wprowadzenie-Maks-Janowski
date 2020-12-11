@@ -16,6 +16,7 @@
       <div class="item colorGreen">
        <ul>
         <li class="item_link"><a class="" href="https://github.com/SK-2019/php-sql-wprowadzenie-Maks-Janowski">Github</a></li>
+        <li class="item_link"><a class="" href="pracownicy.php">Pracownicy</a></li>
        </ul>    
      </div>
     </div>
