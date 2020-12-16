@@ -3,18 +3,29 @@
 <head>
 <link rel="stylesheet" href="style.css">
 </head>
-<body>
-<h1>Maksymilian Janowski 2Ti</h1>
-   
-   <a href="https://github.com/SK-2019/php-sql-wprowadzenie-Maks-Janowski"> link do mojego githuba </a>
-   <a class="nav_link" href="pracownicy.php"><b>Pracownicy<b></a>
-   <a class="nav_link" href="funkcjeagregujace.php"><b>Funkcje Agregujace<b></a>
-   <a class="nav_link" href="pracownicy_organizacja.php"><b>Pracownicy Organizacja<b></a>
-   <a class="nav_link" href="/">Strona Glowna</a>  
-   <a class="nav_link" href="data.php"><b>Data<b></a>
-   <a class="nav_link" href="insert.php"><b>Formularz<b></a>
-      
-      
+ <body>
+    <div class="container">
+      <div class="item colorRed">
+        <h1> Maksymilian Janowski 2Ti </h1>
+
+        <h1 class="tltle"></h1>
+      </div>
+      <div class="item colorBlue">
+       <h1> Menu Boczne: </h1>
+       <ul>
+        <li class="item_link"><a class="link" href="https://github.com/SK-2019/php-sql-wprowadzenie-Maks-Janowski">Github</a></li>
+        <li class="item_link"><a class="link" href="/">Strona Glowna</a></li>
+        <li class="item_link"><a class="link" href="pracownicy.php">Pracownicy</a></li>
+        <li class="item_link"><a class="link" href="pracownicy_organizacja.php">Pracownicy Organizacja</a></li>        
+        <li class="item_link"><a class="link" href="funkcjeagregujace.php">Funkcje Agregujace</a></li>
+        <li class="item_link"><a class="link" href="data.php">Data</a></li>
+        <li class="item_link"><a class="link" href="danedobazy.php">Dane Do Bazy</a></li>
+        <li class="item_link"><a class="link" href="function.php">Funkcja</a></li>
+        <li class="item_link"><a class="link" href="ksiazki.php">Biblioteka</a></li>
+       </ul>   
+     </div>
+      <div class="item colorGreen"> 
+       <h1> Tresc Strony </h1>
    <?php
 
    
