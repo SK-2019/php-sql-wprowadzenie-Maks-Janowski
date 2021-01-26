@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="../style.css">
 </head>
  <body>
     <div class="container">
@@ -15,19 +15,19 @@
        <ul>
         <li class="item_link"><a class="link" href="https://github.com/SK-2019/php-sql-wprowadzenie-Maks-Janowski">Github</a></li>
         <li class="item_link"><a class="link" href="/">Strona Glowna</a></li>
-        <li class="item_link"><a class="link" href="pracownicy.php">Pracownicy</a></li>
-        <li class="item_link"><a class="link" href="pracownicy_organizacja.php">Pracownicy Organizacja</a></li>        
-        <li class="item_link"><a class="link" href="funkcjeagregujace.php">Funkcje Agregujace</a></li>
-        <li class="item_link"><a class="link" href="data.php">Data</a></li>
-        <li class="item_link"><a class="link" href="danedobazy.php">Dane Do Bazy</a></li>
-        <li class="item_link"><a class="link" href="function.php">Funkcja</a></li>
-        <li class="item_link"><a class="link" href="ksiazki.php">Biblioteka</a></li>
+        <li class="item_link"><a class="link" href="Pracownicy/pracownicy.php">Pracownicy</a></li>
+        <li class="item_link"><a class="link" href="Pracownicy/pracownicy_organizacja.php">Pracownicy Organizacja</a></li>        
+        <li class="item_link"><a class="link" href="Pracownicy/funkcjeagregujace.php">Funkcje Agregujace</a></li>
+        <li class="item_link"><a class="link" href="Pracownicy/data.php">Data</a></li>
+        <li class="item_link"><a class="link" href="Pracownicy/danedobazy.php">Dane Do Bazy</a></li>
+        <li class="item_link"><a class="link" href="Cwiczenia/function.php">Funkcja</a></li>
+        <li class="item_link"><a class="link" href="Biblioteka/ksiazki.php">Biblioteka</a></li>
        </ul>   
      </div>
       <div class="item colorGreen"> 
        <h1> Tresc Strony </h1>
 <?php
-   require_once('conn.php');
+   require_once('../assets/conn.php');
                         echo("<hr>");
                         echo("<h3>Wiek poszczegolnych pracownikow (w latach)</h3>");
             $sql=('SELECT * ,YEAR(curdate())-YEAR(data_urodzenia) as wiek FROM pracownicy,organizacja where dzial=id_org');
