@@ -28,7 +28,7 @@
        <h1> Tresc Strony </h1>   
       
 <?php
-    require_once('conn.php');;
+    require_once('assets/conn.php');;
     $result=$conn->query('SELECT * FROM pracownicy,organizacja where dzial=id_org');//mysql
         echo("<hr />");
         echo("<h3>Tabela pracowników</h3>");
