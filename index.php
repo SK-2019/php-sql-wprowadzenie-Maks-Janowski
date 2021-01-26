@@ -21,7 +21,7 @@
         <li class="item_link"><a class="link" href="data.php">Data</a></li>
         <li class="item_link"><a class="link" href="danedobazy.php">Dane Do Bazy</a></li>
         <li class="item_link"><a class="link" href="function.php">Funkcja</a></li>
-        <li class="item_link"><a class="link" href="/Biblioteka/ksiazki.php">Biblioteka</a></li>
+        <li class="item_link"><a class="link" href="https://mj-app-app.herokuapp.com/Biblioteka/ksiazki.php">Biblioteka</a></li>
        </ul>   
      </div>
       <div class="item colorGreen"> 
