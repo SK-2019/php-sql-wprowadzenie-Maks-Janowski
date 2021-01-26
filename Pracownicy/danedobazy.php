@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>JS Bin</title>
-  <link rel="stylesheet" href="style.css">	
+  <link rel="stylesheet" href="../style.css">	
 </head>
 <body>
  
@@ -35,7 +35,7 @@
 
 	  
 	  <?php	  
- require_once('conn.php');
+ require_once('../assets/conn.php');
 
     $sql=('SELECT * FROM pracownicy,organizacja where dzial=id_org');
     $result=$conn->query($sql);     
