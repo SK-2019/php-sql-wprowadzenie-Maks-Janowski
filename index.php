@@ -16,11 +16,11 @@
         <li class="item_link"><a class="link" href="https://github.com/SK-2019/php-sql-wprowadzenie-Maks-Janowski">Github</a></li>
         <li class="item_link"><a class="link" href="/">Strona Glowna</a></li>
         <li class="item_link"><a class="link" href="Pracownicy/pracownicy.php">Pracownicy</a></li>
-        <li class="item_link"><a class="link" href="pracownicy_organizacja.php">Pracownicy Organizacja</a></li>        
-        <li class="item_link"><a class="link" href="funkcjeagregujace.php">Funkcje Agregujace</a></li>
-        <li class="item_link"><a class="link" href="data.php">Data</a></li>
-        <li class="item_link"><a class="link" href="danedobazy.php">Dane Do Bazy</a></li>
-        <li class="item_link"><a class="link" href="function.php">Funkcja</a></li>
+        <li class="item_link"><a class="link" href="Pracownicy/pracownicy_organizacja.php">Pracownicy Organizacja</a></li>        
+        <li class="item_link"><a class="link" href="Pracownicy/funkcjeagregujace.php">Funkcje Agregujace</a></li>
+        <li class="item_link"><a class="link" href="Pracownicy/data.php">Data</a></li>
+        <li class="item_link"><a class="link" href="Pracownicy/danedobazy.php">Dane Do Bazy</a></li>
+        <li class="item_link"><a class="link" href="Cwiczenia/function.php">Funkcja</a></li>
         <li class="item_link"><a class="link" href="Biblioteka/ksiazki.php">Biblioteka</a></li>
        </ul>   
      </div>
