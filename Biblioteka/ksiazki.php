@@ -28,8 +28,7 @@
        <h1> Tresc Strony </h1> 
 <?php
 
-
-require_once('assets/conn.php')
+require_once('../assets/conn.php');
 
 $sql=('SELECT * FROM biblTytul');
 $result=$conn->query($sql);
