@@ -1,6 +1,7 @@
        <!DOCTYPE html>
 <html>
 <head>
+  <title> Maksymilian Janowski 2Ti gr2 nr11 </title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>JS Bin</title>
