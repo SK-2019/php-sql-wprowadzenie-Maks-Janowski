@@ -2,7 +2,8 @@
 <html>
 <head>
 <link rel="stylesheet" href="style.css">
-</head>
+<title> Maksymilian Janowski 2Ti gr2 nr11 </title>
+	</head>
 <body>
 <h1>Maksymilian Janowski 2Ti</h1>
    
