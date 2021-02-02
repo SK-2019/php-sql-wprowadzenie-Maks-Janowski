@@ -3,6 +3,7 @@
 <head>
 <link rel="stylesheet" href="../style.css">
 <link rel="icon" type="image/ico" sizes="16x16" href="../assets/favicon.ico">
+<title> Maksymilian Janowski 2Ti gr2 nr11 </title>
  </head>
  <body>
     <div class="container">
