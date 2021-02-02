@@ -2,12 +2,12 @@
 <html>
 <head>
 <link rel="stylesheet" href="../style.css">
-<title> Maksymilian Janowski 2Ti gr2 nr11 </title>
+<link rel="icon" type="image/ico" sizes="16x16" href="../assets/favicon.ico">
  </head>
  <body>
     <div class="container">
       <div class="item colorRed">
-        <h1> Maksymilian Janowski 2Ti </h1>
+      <h1> Maksymilian Janowski 2Ti gr2 nr11 </h1>
 
         <h1 class="tltle"></h1>
       </div>
