@@ -46,8 +46,6 @@ $result=$conn->query($sql);
 
       
       
-      require_once('conn.php');
-
 $sql=('SELECT * FROM biblAutor');
 $result=$conn->query($sql);
     echo("<hr />");
