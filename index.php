@@ -28,11 +28,6 @@
       <div class="item colorGreen"> 
        <h1> Tresc Strony </h1>
        <?php
-               echo("<li> hostname : ".$_SERVER['HTTP_HOST']);
-               echo("<li> SERVER: ".$_SERVER['sqlservername']);
-               echo("<li> SERVER username: ".$_SERVER['sqlusername']);
-               echo("<li> SERVER passsword: ".$_SERVER['sqlpassword']);
-               echo("<li> SERVER database name: ".$_SERVER['sqldbname']);
        require_once('assets/conn.php');
 
     $sql=('SELECT * FROM pracownicy,organizacja where dzial=id_org');
