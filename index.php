@@ -9,7 +9,6 @@
     <div class="container">
       <div class="item colorRed">
         <h1> Maksymilian Janowski 2Ti gr2 nr11 </h1>
-        echo("<li> hostname : ",$_SERVER['HTTP_HOST']);
         <h1 class="tltle"></h1>
       </div>
       <div class="item colorBlue">
@@ -29,7 +28,8 @@
       <div class="item colorGreen"> 
        <h1> Tresc Strony </h1>
        <?php
-   require_once('assets/conn.php');
+           echo("<li> hostname : ",$_SERVER['HTTP_HOST']);
+       require_once('assets/conn.php');
 
     $sql=('SELECT * FROM pracownicy,organizacja where dzial=id_org');
     $result=$conn->query($sql);
