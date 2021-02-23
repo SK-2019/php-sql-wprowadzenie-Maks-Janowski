@@ -28,7 +28,7 @@
       <div class="item colorGreen"> 
        <h1> Tresc Strony </h1>
        <?php
-               echo("<h3> hostname : ".$_SERVER['HTTP_HOST']);
+               echo("<li> hostname : ".$_SERVER['HTTP_HOST']);
        require_once('assets/conn.php');
 
     $sql=('SELECT * FROM pracownicy,organizacja where dzial=id_org');
